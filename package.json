@@ -1,0 +1,58 @@
+{
+  "name": "xy-image",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xylogistics/xy-image.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xylogistics/xy-image/issues"
+  },
+  "homepage": "https://github.com/xylogistics/xy-image#readme",
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@koa/router": "^13.1.0",
+    "better-sqlite3": "^11.10.0",
+    "bottleneck": "^2.19.5",
+    "deep-object-diff": "^1.1.9",
+    "dotenv": "^16.5.0",
+    "exponential-backoff": "^3.1.2",
+    "http-mutunga": "^2.0.0",
+    "immer": "^10.1.1",
+    "json5": "^2.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "koa": "^3.0.0",
+    "koa-body": "^6.0.1",
+    "koa-compress": "^5.1.1",
+    "koa-conditional-get": "^3.0.0",
+    "koa-etag": "^5.0.0",
+    "koa-helmet": "^8.0.1",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^4.0.0",
+    "koa-passport": "^6.0.0",
+    "koa-response-time": "^2.1.0",
+    "koa-static": "^5.0.0",
+    "luxon": "^3.6.1",
+    "mqtt": "^5.13.1",
+    "node-opcua": "^2.156.0",
+    "nodemon": "^3.1.10",
+    "pagepro": "^0.2.1",
+    "passport-azure-ad": "^4.3.5",
+    "postgres": "^3.4.7",
+    "reconnecting-websocket": "^4.4.0",
+    "short-uuid": "^5.2.0",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.2",
+    "xy-api": "^1.14.0",
+    "xy-mqtt": "^1.1.1",
+    "xy-websocket": "^1.14.0"
+  }
+}
