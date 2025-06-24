@@ -20,7 +20,8 @@
   "dependencies": {
     "@koa/cors": "^5.0.0",
     "@koa/router": "^13.1.0",
-    "better-sqlite3": "^11.10.0",
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^12.1.0",
     "bottleneck": "^2.19.5",
     "deep-object-diff": "^1.1.9",
     "dotenv": "^16.5.0",
@@ -46,13 +47,14 @@
     "nodemon": "^3.1.10",
     "pagepro": "^0.2.1",
     "passport-azure-ad": "^4.3.5",
+    "passport-http": "^0.3.0",
     "postgres": "^3.4.7",
     "reconnecting-websocket": "^4.4.0",
     "short-uuid": "^5.2.0",
     "uuid": "^11.1.0",
     "ws": "^8.18.2",
-    "xy-api": "^1.14.0",
+    "xy-api": "^1.14.1",
     "xy-mqtt": "^1.1.1",
-    "xy-websocket": "^1.14.0"
+    "xy-websocket": "^1.14.1"
   }
 }
