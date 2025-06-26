@@ -22,7 +22,7 @@
     "@koa/etag": "^5.0.1",
     "@koa/router": "^13.1.0",
     "bcrypt": "^6.0.0",
-    "better-sqlite3": "^12.1.0",
+    "better-sqlite3": "^12.1.1",
     "bottleneck": "^2.19.5",
     "deep-object-diff": "^1.1.9",
     "dotenv": "^16.5.0",
@@ -54,7 +54,7 @@
     "short-uuid": "^5.2.0",
     "uuid": "^11.1.0",
     "ws": "^8.18.2",
-    "xy-api": "^1.14.1",
+    "xy-api": "^1.15.2",
     "xy-mqtt": "^1.1.1",
     "xy-websocket": "^1.14.1"
   }
