@@ -20,12 +20,12 @@
   "dependencies": {
     "@koa/cors": "^5.0.0",
     "@koa/etag": "^5.0.1",
-    "@koa/router": "^13.1.0",
+    "@koa/router": "^13.1.1",
     "bcrypt": "^6.0.0",
     "better-sqlite3": "^12.2.0",
     "bottleneck": "^2.19.5",
     "deep-object-diff": "^1.1.9",
-    "dotenv": "^17.0.0",
+    "dotenv": "^17.0.1",
     "exponential-backoff": "^3.1.2",
     "http-mutunga": "^2.0.0",
     "immer": "^10.1.1",
@@ -54,7 +54,7 @@
     "short-uuid": "^5.2.0",
     "uuid": "^11.1.0",
     "ws": "^8.18.3",
-    "xy-api": "^1.15.3",
+    "xy-api": "^1.17.0",
     "xy-mqtt": "^1.1.1",
     "xy-websocket": "^1.14.1"
   }
