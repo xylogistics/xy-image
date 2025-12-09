@@ -1,3 +1,13 @@
+# Build locally
+
+`docker buildx build --platform=linux/amd64 -t quay.io/xyl/image:vX.Y.Z .`
+
+`docker save -o xyl_image_vX_Y_Z.docker quay.io/xyl/image:vX.Y.Z`
+
+`tar czf xyl_image_vX_Y_Z.docker.tar.gz xyl_image_vX_Y_Z.docker`
+
+
+
 # xy-image
 
 Available as `quay.io/xyl/image:v1.0.0`. Built by the quay.io service automatically from commits to main (as `:latest`) and tags (e.g. `v1.2.1`). It's a free service so builds can take up to 5 minutes. Changes to dependencies of `package.json` need a local run of `npm i` so the `package-lock.json` file is updated.
