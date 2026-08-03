@@ -69,11 +69,26 @@ files and the derived-image Dockerfiles:
 
 ```sh
 cd ../dhl-te-kapua-deployment
-grep -rn 'quay.io/xyl/image:v' docker-*/compose.yaml docker-*/xyl-image/Dockerfile
+grep -rnE 'quay\.io/xyl/image(/arm)?:v' docker-*/compose.yaml docker-*/xyl-image/Dockerfile
 ```
+
+That reports 32 references at present, 8 per environment:
+
+| Environment | In `compose.yaml` | In `xyl-image/Dockerfile` |
+|---|---|---|
+| `uat`, `live1`, `live2` | 7 | 1 — the `svt` derived image |
+| `local` | 8 | none |
 
 Update every occurrence for the environment you are deploying, then commit and push
 that repo on the same release branch.
+
+`docker-local/` is the odd one out twice over. It pins the **`/arm`** variant
+(`quay.io/xyl/image/arm:vX.Y.Z`) for Apple silicon, and it runs `svt` straight off
+the base image with no derived image — which is why it has 8 compose references and
+no `Dockerfile`. It is never deployed, so bumping it is optional; leave it behind and
+local dev quietly resolves dependencies against the old image. The `(/arm)?` in the
+pattern above is what makes those 8 visible at all — a plain search for `image:v`
+silently skips every one of them.
 
 **8. Deploy.** Run the deploy script for the target environment and answer `y` to
 **both** `xy-image` **and** `dhl-te-kapua-deployment`, then run the `docker load`
